@@ -92,12 +92,12 @@
 .dynamic {
 	color: var(--font-color, #000);
 	font-size: var(--font-size, 18px);
-	font-family: var(--font-family, 'Open Sans');
+	font-family: var(--font-family, 'Open Sans'), sans-serif;
 }
 
 // для заголовка и подзаголовка рамер шрифта одинаковый, меняется только цвет и семейство шрифтов
 
 .dynamicLite {
 	color: var(--font-color, #000);
-	font-family: var(--font-family, 'Open Sans');
+	font-family: var(--font-family, 'Open Sans'), sans-serif;
 }
