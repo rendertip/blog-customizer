@@ -19,6 +19,9 @@ export default defineConfig({
   ],
   base: '',
   css: {
+    modules: {
+      generateScopedName: '[name]__[local]___[hash:base64:5]',
+    },
     preprocessorOptions: {
       scss: {
         // @ts-expect-error api is a valid sass option but not in Vite's types yet
