@@ -78,13 +78,17 @@
 }
 
 .option:hover {
-	background: var(--grey, #c4c4c4);
+	background-color: #eee;
+}
+
+.option:active {
+	background-color: #d7d7d7;
 }
 
 @mixin option-color-before {
 	content: '';
-	width: 35px;
-	height: 35px;
+	width: 24px;
+	height: 24px;
 	margin-right: 10px;
 }
 
@@ -96,9 +100,9 @@
 @mixin option-color-after {
 	content: '';
 	position: absolute;
-	left: 26px;
-	width: 17px;
-	height: 17px;
+	left: 25px;
+	width: 8px;
+	height: 8px;
 	border-radius: 100%;
 }
 
@@ -199,6 +203,12 @@
 .option-wide::before {
 	@include option-width-before;
 	background-image: url('../../images/wide.svg');
+}
+
+.option-wide,
+.option-narrow {
+	box-sizing: border-box;
+	height: 48px;
 }
 
 .option-narrow::before {
