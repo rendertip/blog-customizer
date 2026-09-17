@@ -23,7 +23,7 @@ jobs:
       working-directory: /tmp/tests-blog-customizer
       run: |
         npm ci
-        npx playwright install --with-deps chromium
+        npx playwright install chromium
     - name: Run tests
       run: bash /tmp/tests-blog-customizer/run.sh
     - uses: actions/upload-artifact@v4
